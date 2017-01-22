@@ -127,11 +127,11 @@ Node.prototype.draw = function(ctx, font_size, term_font, nonterm_font, color, t
 		if (this.has_children)
 			ctx.fillStyle = "blue";
 		if (this.value) {
-			if (this.value[0] == '_') {
+			if (this.value[0] == '~') {
 				ctx.fillStyle = "green";
 				this.value = this.value.substring(1)
 				if (this.value) {
-					if (this.value[0] == '_') {
+					if (this.value[0] == '~') {
 						ctx.fillStyle = "red";
 						this.value = this.value.substring(1)
 					}
