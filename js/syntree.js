@@ -121,7 +121,6 @@ Node.prototype.draw = function(ctx, font_size, term_font, nonterm_font, color, t
 	if (this.has_children)
 		ctx.font = nonterm_font;
 	
-	console.log(this.value)
 	ctx.fillStyle = "black";
 	if (color) {
 		if (this.has_children)
@@ -139,8 +138,6 @@ Node.prototype.draw = function(ctx, font_size, term_font, nonterm_font, color, t
 			}
 		}
 	}
-	console.log(this.value)
-	console.log()
 	
 	ctx.fillText(this.value, this.x, this.y);
 	for (var child = this.first; child != null; child = child.next)
