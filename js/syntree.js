@@ -120,17 +120,6 @@ Node.prototype.draw = function(ctx, font_size, term_font, nonterm_font, color, t
 	if (this.has_children)
 		ctx.font = nonterm_font;
 	
-	if (this.value.length > 0) {
-		if (this.value[0] == '_') {
-			ctx.fillStyle = "green";
-			if (this.value.length > 1) {
-				if (this.value[1] == '_') {
-					ctx.fillStyle = "red";
-				}
-			}
-		}
-	}
-	
 	ctx.fillStyle = "black";
 	if (color) {
 		if (this.has_children)
